@@ -7,6 +7,16 @@ Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "WindowsAzure1", "WindowsAzu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWebRole1", "MvcWebRole1\MvcWebRole1.csproj", "{4AB4A2BF-CC44-46A6-B80B-1690B9A5A8EC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI", "CI", "{462EF3E5-4C75-495B-8FBD-3F45BF54735B}"
+	ProjectSection(SolutionItems) = preProject
+		CI\Development-Digimuse.Azure.WebRoles-Deploy.ps1 = CI\Development-Digimuse.Azure.WebRoles-Deploy.ps1
+		CI\Development-Digimuse.Azure.WebRoles-Pack.bat = CI\Development-Digimuse.Azure.WebRoles-Pack.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{D1DA0EC3-5C14-41BD-867B-12897807346E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Digimuse_Azure_WebRoles", "Digimuse_Azure_WebRoles", "{307B08CA-EA8A-41A0-9EE0-5038BFA90293}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{307B08CA-EA8A-41A0-9EE0-5038BFA90293} = {D1DA0EC3-5C14-41BD-867B-12897807346E}
 	EndGlobalSection
 EndGlobal
